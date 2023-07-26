@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+@keyframes swingHorizontal {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
+body {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
+.saudacao {
+  font-size: 1rem;
+  color: red;
+  margin-top: 10px;
+  animation: swingHorizontal 5s ease-in-out infinite;
+}
+
+.datahoje {
+  font-size: 1rem;
+  color: red;
+  margin-top: 10px;
+}
+.hora {
+  font-family: "Orbitron", sans-serif;
+  font-size: 200px;
+  display: flex;
+  color: red;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .hora {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hora {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .hora {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hora {
+    font-size: 40px;
+  }
+}

@@ -59,5 +59,5 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 setInterval(AtualizarHora, 1000);
-setInterval(ChecarSaudacao, 2 * 60 * 1000);
+setInterval(ChecarSaudacao, 60 * 1000);
 setInterval(AtualizarDia, 10 * 60 * 1000);
